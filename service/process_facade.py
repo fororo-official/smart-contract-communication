@@ -1,5 +1,5 @@
-import model.image_process as image_process
-import model.NFT_process as NFT_process
+import service.image_process as image_process
+import service.NFT_process as NFT_process
 
 
 class ProcessFacade:

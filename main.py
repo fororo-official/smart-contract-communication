@@ -1,11 +1,10 @@
-import model.image_process as image_process
-import model.NFT_process as NFT_process
-import model.process_facade as process_facade
+import service.image_process_v2 as image_process
+import service.NFT_process as NFT_process
+import service.process_facade as process_facade
 
 
 if __name__ == "__main__":
-    # 정유경 2023086880  표준성   2023063845
-    image_process_instance = image_process.ImageProcess(
-        department_name="정보시스템학과", student_name="표준성", student_number="2023063845", year="2023", president_name="김유진",  date="2023-12-23", study_name="포로로")
+    print(len("웹스크래핑 스터디(정규)"))
+    image_process_instance = image_process.ImageProcessV2(
+        date="2024.02.15", department_name="정보시스템학과", student_name="김아무", student_number="2023001002", study_name="웹스크래핑 스터디(정규)", durations="2023.07.01~2023.12.31")
     image_process_instance.run()
-    None
